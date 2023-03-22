@@ -1,2 +1,6 @@
 # httpclient
-修改源码 apache的 httpclient 的包，给CloseableHttpResponse 的 获取源地址，socket连接时间，请求时间等api
+# 修改环境 jdk11
+future:
+1. 添加 CloseableHttpResponse 接口 getRemoteAddress() 方法，可以获取调用的真实 ip 地址
+2. 添加 CloseableHttpResponse 接口 getConnectElapseMillisecond() 方法，可以获取建立链接消耗的时间(单位:毫秒, 如果获取的是0，说明调用native的时候系统直接就有这个tcp连接)
+3. 添加 CloseableHttpResponse 接口 getResponseElapseMillisecond() 方法，可以获取发出请求到接受相应的消耗时间(单位:毫秒)
