@@ -33,6 +33,7 @@
         <api.comparison.version>4.5</api.comparison.version>
         <mojo.version>3.3.0</mojo.version>
         <javadoc.plugin.version>3.4.1</javadoc.plugin.version>
+        <fastjson.verion>2.0.45</fastjson.verion>
     </properties>
 
 
@@ -63,6 +64,19 @@
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>build-helper-maven-plugin</artifactId>
             <version>${mojo.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.fastjson2</groupId>
+            <artifactId>fastjson2</artifactId>
+            <version>${fastjson.verion}</version>
+            <scope>test</scope>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>${javadoc.plugin.version}</version>
         </dependency>
     </dependencies>
 
