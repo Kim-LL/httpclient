@@ -72,12 +72,6 @@
             <scope>test</scope>
             <optional>true</optional>
         </dependency>
-
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-javadoc-plugin</artifactId>
-            <version>${javadoc.plugin.version}</version>
-        </dependency>
     </dependencies>
 
     <build>
